@@ -31,3 +31,5 @@ Team Members
 - Merge Code With Github
 1000
 - We also get Logo for our Team (Christina Created)
+1013
+- Send Request to Team Members to join on github and they can easily access the code
