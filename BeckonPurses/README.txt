@@ -27,4 +27,7 @@ Team Members
 - We got the Logo (Christina Created) For Our Product
 0950
 - Creating a README.txt
-0
+0959
+- Merge Code With Github
+1000
+- We also get Logo for our Team (Christina Created)
