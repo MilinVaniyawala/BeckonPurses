@@ -1,8 +1,13 @@
-using BeckonPurses.Data;
+﻿using BeckonPurses.Data;
+using BeckonPurses.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<BeckonPursesContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BeckonPursesContext") ?? throw new InvalidOperationException("Connection string 'BeckonPursesContext' not found.")));
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
