@@ -92,3 +92,13 @@ Team Members
 - Yes, It's working successfully
 1135
 - Push The Updated Code On Git.
+
+2025-02-20
+1430
+- Clone the repo
+1435
+- run the data and added SeedData
+1445
+- Run the code and check
+1450
+- It works successfully
