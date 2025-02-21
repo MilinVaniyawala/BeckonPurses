@@ -20,7 +20,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
+// need to fix this later
 // using (var scope = app.Services.CreateScope())
 // {
 //     var services = scope.ServiceProvider;
