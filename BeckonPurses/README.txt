@@ -1,104 +1,160 @@
-﻿﻿CYB 206 Web Application Security
-Team THETA
-Team Members
-- Austin Albaloo
-- Christina Joseph
-- Milin Vaniyawala
+﻿﻿CYB 206 Web Application Security  
+Team THETA  
+Team Members  
+- Austin Albaloo  
+- Christina Joseph  
+- Milin Vaniyawala  
 
-2025-02-12
-0915
-- Team Meeting
-- Decide Properties
-- Properties are
-	- Material
-	- Size
-	- Shape
-	- Color
-	- Texture
-	- Closure Type
-	- Price
+2025-02-12-09-15-00  
+- Team Meeting  
+- Decide Properties  
+- Properties are  
+	- Material  
+	- Size  
+	- Shape  
+	- Color  
+	- Texture  
+	- Closure Type  
+	- Price  
 
-0923
-- Looking for Purse Brand Name
-- Find the name "Beckon Purses"
+2025-02-12-09-23-00  
+- Looking for Purse Brand Name  
+- Found the name "Beckon Purses"  
 
-0934
-- VS Version: VS Community 2022 17.12.0
-- .NET SDK 8.0.404
-- Created a Project in Microsoft Visual Studio
+2025-02-12-09-34-00  
+- VS Version: VS Community 2022 17.12.0  
+- .NET SDK 8.0.404  
+- Created a Project in Microsoft Visual Studio  
 
-0935
-- Run the Project and Check is that works or not
-0937
-- Application Runs Successfully
-0947
-- We got the Logo (Christina Created) For Our Product
-0950
-- Creating a README.txt
-0959
-- Merge Code With Github
-1000
-- We also get Logo for our Team (Christina Created)
-1013
-- Send Request to Team Members to join on github and they can easily access the code
+2025-02-12-09-35-00  
+- Run the Project and Check if it works  
 
-2025-02-19
-0125
--Created HelloWorldController
-	- Add 2 methods (Index and Welcome)
-0130
-- Run and Test the application, however it's works properly
-0132
-- In Controller Updated the Welcome Method (two paramters:name and numTimes
-0137
-- Tested Updated Method, Also did some code testing with my own values
-0140
-- In Controller Update the Welcome Method (two parameters:name and ID)
-0143
-- Also Testing the created method and confirm it works.
-0147
-- Created New Folder in View - HelloWorld, Created Index.cshtml inside this folder
-0203
-- Modify the Index file in view->HelloWorld directory
-0205
-- Modify the Welcome method in controller
-0210
-- Created new file in HelloWorld View -> Welcome file added
-0211
-- Check the code in browser
-0936
-- Modifying the layout.cshtml (Changes in title,navbar and footer)
-0940
-- Runs the application and check the code is working or not.
-0943
-- Yes, It's working successfully
-0945 
-- Creating a Model file call Purse
-0950
-- Create Purses Pages using Scaffolding tool
-1002
-- Starting the migration
-- Having issues with migration because here we have two context, one is authentication and another one is our purse one. So now whenever I need to add migration we also need to define context.
-- ERROR: More than one DbContext was found. Specify which one to use. Use the '-Context' parameter for PowerShell commands and the '--context' parameter for dotnet commands.
-- So, here please note down the command.
-	- Add-Migration "name of migration" -Context BeckonPursesContext
-	- Update-Database -Context BeckonPursesContext
-- However, I got the answer from the stackoverflow.
-- Here is the link: https://stackoverflow.com/questions/52311053/more-than-one-dbcontext-was-found
-- 20250219161823_InitialCreate.cs
-1124
-- Runs the application and check the code is working or not.
-1125
-- Yes, It's working successfully
-1135
-- Push The Updated Code On Git.
+2025-02-12-09-37-00  
+- Application Runs Successfully  
 
-2025-02-20
-1430
-- Clone the repo
-1435
-- run the data and added SeedData
-1445
-- Run the code and check
-1450
-- It works successfully
+2025-02-12-09-47-00  
+- Got the Logo (Christina Created) for Our Product  
+
+2025-02-12-09-50-00  
+- Creating a README.txt  
+
+2025-02-12-09-59-00  
+- Merged Code With GitHub  
+
+2025-02-12-10-00-00  
+- Got a Logo for our Team (Christina Created)  
+
+2025-02-12-10-13-00  
+- Sent Request to Team Members to join GitHub for code access  
+
+2025-02-19-01-25-00  
+- Created HelloWorldController  
+	- Added 2 methods (Index and Welcome)  
+
+2025-02-19-01-30-00  
+- Ran and Tested the application, works properly  
+
+2025-02-19-01-32-00  
+- Updated the Welcome Method in Controller (added parameters: name and numTimes)  
+
+2025-02-19-01-37-00  
+- Tested Updated Method, did some additional code testing  
+
+2025-02-19-01-40-00  
+- Updated the Welcome Method in Controller (parameters: name and ID)  
+
+2025-02-19-01-43-00  
+- Tested the updated method and confirmed it works  
+
+2025-02-19-01-47-00  
+- Created New Folder in Views - HelloWorld, added Index.cshtml inside  
+
+2025-02-19-02-03-00  
+- Modified the Index file in Views -> HelloWorld  
+
+2025-02-19-02-05-00  
+- Modified the Welcome method in Controller  
+
+2025-02-19-02-10-00  
+- Created a new Welcome.cshtml file in Views -> HelloWorld  
+
+2025-02-19-02-11-00  
+- Checked the code in the browser  
+
+2025-02-19-09-36-00  
+- Modified layout.cshtml (Changes in title, navbar, and footer)  
+
+2025-02-19-09-40-00  
+- Ran the application and checked if the code was working  
+
+2025-02-19-09-43-00  
+- Yes, it's working successfully  
+
+2025-02-19-09-45-00  
+- Created a Model file called Purse  
+
+2025-02-19-09-50-00  
+- Created Purse pages using the Scaffolding tool  
+
+2025-02-19-10-02-00  
+- Started migration  
+- Encountered issues due to two DbContext (authentication and purse)  
+- ERROR: More than one DbContext was found. Specify the context using:  
+	- Add-Migration "MigrationName" -Context BeckonPursesContext  
+	- Update-Database -Context BeckonPursesContext  
+- Found the solution on StackOverflow:  
+  https://stackoverflow.com/questions/52311053/more-than-one-dbcontext-was-found  
+
+2025-02-19-11-24-00  
+- Ran the application and checked if the code was working  
+
+2025-02-19-11-25-00  
+- Yes, it's working successfully  
+
+2025-02-19-11-35-00  
+- Pushed the updated code to GitHub  
+
+2025-02-20-14-30-00  
+- Cloned the repo  
+
+2025-02-20-14-35-00  
+- Ran the data and added SeedData  
+
+2025-02-20-14-45-00  
+- Ran the code and checked functionality  
+
+2025-02-20-14-50-00  
+- Everything works successfully  
+
+2025-02-20-15-20-00  
+- Added images to the file directory  
+
+2025-02-20-15-50-00  
+- Worked with Christina to add the SeedData file  
+
+2025-02-20-16-30-00  
+- Seeded the database  
+
+2025-02-20-16-45-00  
+- Started working on the About Us page  
+
+2025-02-20-17-00-00  
+- Added the necessary MVC components to the project  
+
+2025-02-20-17-30-00  
+- Finished writing the paragraphs for the page  
+
+2025-02-20-17-45-00  
+- Added the image to replace the title on the navbar  
+
+2025-02-20-18-12-00  
+- Added Theta_logo.jpeg to the About Us page  
+
+2025-02-20-18-30-00  
+- Finished the README.md  
+
+2025-02-20-18-50-00  
+- Updated the README.txt  
+
+2025-02-20-19-30-00  
+- Fixed a few typos  
