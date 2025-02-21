@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using BeckonPurses.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace BeckonPurses.Data
 {
     public class BeckonPursesContext : DbContext
     {
-        public BeckonPursesContext (DbContextOptions<BeckonPursesContext> options)
+        public BeckonPursesContext(DbContextOptions<BeckonPursesContext> options)
             : base(options)
         {
         }

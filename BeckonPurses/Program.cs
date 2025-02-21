@@ -1,8 +1,6 @@
 ﻿using BeckonPurses.Data;
-using BeckonPurses.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,13 +18,14 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-// need to fix this later
-// using (var scope = app.Services.CreateScope())
-// {
-//     var services = scope.ServiceProvider;
 
-//     SeedData.Initialize(services);
-// }
+// need to fix this later For Austin Mac OS
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
