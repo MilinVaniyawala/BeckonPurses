@@ -165,50 +165,50 @@ Team Members
 2025-02-20-23-52-00
 - Clean, Build And Runs the code.
 
-2025-03-05
-0950
-1>------ Clean started: Project: BeckonPurses, Configuration: Debug Any CPU ------
-========== Clean: 1 succeeded, 0 failed, 0 skipped ==========
-========== Clean completed at 09:50 AM and took 02.772 seconds ==========
-0951
-1>------ Build started: Project: BeckonPurses, Configuration: Debug Any CPU ------
-Restored F:\St. Clair College\Sem 2\CYB 206\BeckonPurses\BeckonPurses\BeckonPurses.csproj (in 517 ms).
-1>BeckonPurses -> F:\St. Clair College\Sem 2\CYB 206\BeckonPurses\BeckonPurses\bin\Debug\net8.0\BeckonPurses.dll
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-========== Build completed at 09:51 AM and took 06.503 seconds ==========
-0959
-- Also run and check the code
+2025-03-05-09-50-00
+- Clean started: Project: BeckonPurses, Configuration: Debug Any CPU
+- Clean completed
+- Build completed: 1 succeeded
 
-2025-03-07
-0051
-- In Program.cs write code for role base and define default user for admin and users
-0115
-- Also run and check the code
-0132
-- In Purse Controller did changes accordingly for RBAC
-0147
-- run and check the code
-0221
-- Modify Index View of Purse Directory to hide Create,Edit and Delete Option for user admin have access.
-0238
-- run and check the code
-0254
-- All Functionality working completely.
+2025-03-05-09-59-00
+- Ran and checked the code
 
-=======================================================
+2025-03-07-00-51-00
+- In Program.cs wrote code for role base and defined default user for admin and users
+
+2025-03-07-01-15-00
+- Ran and checked the code
+
+2025-03-07-01-32-00
+- In Purse Controller made changes accordingly for RBAC
+
+2025-03-07-01-47-00
+- Ran and checked the code
+
+2025-03-07-02-21-00
+- Modified Index View of Purse Directory to hide Create, Edit, and Delete Options for users; admin has access.
+
+2025-03-07-02-38-00
+- Ran and checked the code
+
+2025-03-07-02-54-00
+- All functionality working completely.
+
+2025-03-07-02-57-00
 Credentials
+=======================================
 
 Admin User
+- ID: milin@myscc.ca
+- Pass: Admin@1234
 
-ID: milin@myscc.ca
-Pass: Admin@1234
-
-Guest User
-
+=======================================
+Guest Users
+=======================================
 User 1
-ID: austin@myscc.ca
-Pass: User@1234
+- ID: austin@myscc.ca
+- Pass: User@1234
 
 User 2
-ID: christina@myscc.ca
-Pass: User@5678
+- ID: christina@myscc.ca
+- Pass: User@5678
