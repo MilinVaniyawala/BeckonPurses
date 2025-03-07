@@ -1,5 +1,7 @@
 ﻿using BeckonPurses.Data;
 using BeckonPurses.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,10 +10,13 @@ namespace BeckonPurses.Controllers
     public class PursesController : Controller
     {
         private readonly BeckonPursesContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public PursesController(BeckonPursesContext context)
+
+        public PursesController(BeckonPursesContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Purses
@@ -39,6 +44,7 @@ namespace BeckonPurses.Controllers
         }
 
         // GET: Purses/Create
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             return View();
@@ -47,6 +53,7 @@ namespace BeckonPurses.Controllers
         // POST: Purses/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Material,Size,Shape,Color,Texture,ClosureType,Price")] Purse purse)
@@ -61,6 +68,7 @@ namespace BeckonPurses.Controllers
         }
 
         // GET: Purses/Edit/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,6 +87,7 @@ namespace BeckonPurses.Controllers
         // POST: Purses/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Material,Size,Shape,Color,Texture,ClosureType,Price")] Purse purse)
@@ -112,6 +121,7 @@ namespace BeckonPurses.Controllers
         }
 
         // GET: Purses/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,6 +140,7 @@ namespace BeckonPurses.Controllers
         }
 
         // POST: Purses/Delete/5
+        [Authorize(Roles = "Administrator")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
