@@ -24,6 +24,9 @@ Beckon Purses is a web application designed to showcase and manage a collection 
 - Layout Customization (Navbar, Footer, and Titles Updated)
 - Initial Seed Data for Testing
 
+## Azure Link
+[Beckon Purses Website](https://beckonpurses20250321015633.azurewebsites.net/)
+
 ## Installation & Setup
 ```bash
 # Clone the Repository
